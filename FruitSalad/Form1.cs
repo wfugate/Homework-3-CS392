@@ -10,6 +10,7 @@ namespace FruitSalad
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            //reset money values
             txtTotal.Text = "$0.00";
             money = 0.00;
 
@@ -17,30 +18,35 @@ namespace FruitSalad
 
         private void pbApple_Click(object sender, EventArgs e)
         {
+            //increase total price and update display
             money += 1.35;
             txtTotal.Text = "$" + money.ToString();
         }
 
         private void pbBanana_Click(object sender, EventArgs e)
         {
+            //increase total price and update display
             money += 0.65;
             txtTotal.Text = "$" + money.ToString();
         }
 
         private void pbOrange_Click(object sender, EventArgs e)
         {
+            //increase total price and update display
             money += 1.60;
             txtTotal.Text = "$" + money.ToString();
         }
 
         private void pbPear_Click(object sender, EventArgs e)
         {
+            //increase total price and update display
             money += 1.20;
             txtTotal.Text = "$" + money.ToString();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            //exit
             Application.Exit();
         }
     }

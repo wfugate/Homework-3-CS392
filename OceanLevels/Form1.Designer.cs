@@ -37,7 +37,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(19, 60);
+            label1.Location = new Point(76, 61);
             label1.Name = "label1";
             label1.Size = new Size(62, 15);
             label1.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // txtYear
             // 
-            txtYear.Location = new Point(87, 57);
+            txtYear.Location = new Point(76, 79);
             txtYear.Name = "txtYear";
             txtYear.Size = new Size(100, 23);
             txtYear.TabIndex = 1;
@@ -56,7 +56,7 @@
             lbLevels.ItemHeight = 15;
             lbLevels.Location = new Point(19, 103);
             lbLevels.Name = "lbLevels";
-            lbLevels.Size = new Size(168, 154);
+            lbLevels.Size = new Size(266, 229);
             lbLevels.TabIndex = 2;
             // 
             // btnShow

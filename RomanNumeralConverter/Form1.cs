@@ -9,8 +9,8 @@ namespace RomanNumeralConverter
 
         private void txtInput_TextChanged(object sender, EventArgs e)
         {
-            bool isNumber = int.TryParse(txtInput.Text, out int number);
-                switch (number) {
+            bool isNumber = int.TryParse(txtInput.Text, out int number); //get number and TryParse
+                switch (number) { //switch case to handle display
                     case 1:
                         lblValue.Text = "I";
                         break;

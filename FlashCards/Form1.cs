@@ -23,9 +23,9 @@ namespace FlashCards
             if (opAvailable) //catch errors where op is not available 
             {
 
-                int solution = findSolution();
-                counterToTen++;
-                lblScore.Text = counterToTen.ToString() + "/10";
+                int solution = findSolution(); //get current solution
+                counterToTen++; //indicate a submission has been made
+                lblScore.Text = counterToTen.ToString() + "/10"; //update counter at the top
                 try
                 {
                     //get the input and check if it is correct
@@ -180,11 +180,7 @@ namespace FlashCards
             {
                 MessageBox.Show("You must select addition or subtraction.");
             }
-
-
-
         }
-
         private void txtStatus_Click(object sender, EventArgs e)
         {
 

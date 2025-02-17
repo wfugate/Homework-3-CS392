@@ -30,18 +30,19 @@ namespace StadiumSeating
         }
 
         private void btnCalc_Click(object sender, EventArgs e)
-        {
+        {   //get values any use TryParse incase they are not ints
             bool aExists = int.TryParse(txtClassA.Text, out int aVal);
             int bVal;
             bool bExists = int.TryParse(txtClassB.Text, out bVal);
             int cVal;
             bool cExists = int.TryParse(txtClassC.Text, out cVal);
             int total;
-
+            //calculate revenues
             int aTotal = aVal * 15;
             int bTotal = bVal * 12;
             int cTotal = cVal * 9;
             total = aTotal + bTotal + cTotal;
+            //display revenues
             txtClassADisplay.Text = "$" + aTotal.ToString();
             txtClassBDisplay.Text = "$" + bTotal.ToString();
             txtClassCDisplay.Text = "$" + cTotal.ToString();
